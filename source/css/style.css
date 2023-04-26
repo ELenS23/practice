@@ -14,12 +14,53 @@
     font-display: swap;
 }
 
-.html {
+html {
     height: 100%;
 }
 
-.body {
+body {
     height: 100%;
+    width: 1200px;
     font-family: 'Noto Serif', Times, serif;
-    background: tomato;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    height: 100px;
+    width: 1200px;
+    background: blue;
+    flex: none;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    min-height: 100%;
+}
+
+article {
+    width: 1000px;
+    order: -1;
+    background: gray;
+}
+
+aside {
+    width: 200px;
+    background: pink;
+    opacity: 0.5;
+}
+
+footer {
+    height: 100px;
+    flex: none;
+    background: blue;
+}
+
+.copyright {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+
 }
