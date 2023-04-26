@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заказ пиццы</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Форма заказа пиццы</h1>
+    <form method="get" action="#">
+        <fieldset>
+            <legend>Итальянская с моцареллой и пепперони </legend>
+            <p>Традиционный рецепт с двумя видами сыра: тертый и мягкий сыр Моцарелла; пикантная пепперони,
+                шампиньоны и
+                смесь приправ</p>
+            <label>Выберите тесто
+                <input type="radio" name="dough" value="thick">Традиционное
+                <input type="radio" name="dough" value="thin">Тонкое
+            </label>
+            <p>Добавить ингредиенты</p>
+            <label for="ingredients1"><input type="checkbox" name="ingredients1" id="ingredients1"
+                    value="mushroom">Шампиньоны</label>
+            <label for="ingredients2"><input type="checkbox" name="ingredients2" id="ingredients2"
+                    value="cheddar-cheese">Сыр Чеддер</label>
+            <label for="ingredients3"><input type="checkbox" name="ingredients3" id="ingredients3"
+                    value="ham">Ветчина</label>
+            <label for="ingredients4"><input type="checkbox" name="ingredients4" id="ingredients4"
+                    value="jalapeno-pepper">Перец халапеньо</label>
+            <label for="ingredients5"><input type="checkbox" name="ingredients5" id="ingredients5"
+                    value="pineapple">Ананасы</label>
+            <br>
+            <br>
+            <select name="size">
+                <option disabled>Выберите размер пиццы</option>
+                <option value="23">23 см</option>
+                <option value="30">30 см</option>
+                <option value="35">35 см</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" id="submit">Отправить заказ</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
