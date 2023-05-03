@@ -1,37 +1,38 @@
 @font-face {
     font-family: 'Oswald';
-    src: url('Oswald-Bold.ttf') format('ttf');
-    font-weight: bold;
+    src: url('../fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('Oswald-Medium.ttf') format('ttf');
-    font-weight: medium;
+    src: url('../fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('Oswald-Regular.ttf') format('ttf');
-    font-weight: regular;
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('OpenSans-Regular.ttf') format('ttf');
-    font-weight: regular;
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-display: swap;
 }
 
 body {
     margin: 0;
     font-family: 'Oswald';
+    font-weight: 400;
 }
 
 header {
@@ -47,22 +48,60 @@ main {
     height: 931px;
 }
 
-
 .top {
     height: 740px;
-    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), #404149;
+    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url("../images/top-bg.png") #404149;
 }
 
 .navigation {
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
     width: 1110px;
-    margin-top: 30px;
+    margin: 0 auto;
+}
+
+.navigation-logo-link {
+    display: block;
+    width: 60px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.navigation-burger {
+    display: block;
+    border: none;
+
+    box-sizing: border-box;
+}
+
+.navigation-burger-logo {
+    display: block;
 }
 
 .top-annotation {
+    margin: 112px auto 35px;
     width: 734px;
-    margin: 112px 190px 35px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
 
+.top-description {
+    width: 734px;
+    margin: 0 auto 170px;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .menu {
@@ -72,13 +111,48 @@ main {
     background: #f7f7f7;
     margin: -150px auto 0;
     text-align: center;
-    padding: 35px;
+    padding: 57px 130px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-item {
     display: inline-block;
     vertical-align: top;
-    margin: 15px;
     width: 190px;
-    height: 200px;
+    height: 186px;
+    text-align: center;
+}
+
+.menu-item-number {
+    margin: 0 0 25px 0;
+    padding: 0;
+    height: 86px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7654A;
+}
+
+.menu-item-year {
+    margin: 0 0 10px 0;
+    height: 43px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-item-market {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #999999;
 }
