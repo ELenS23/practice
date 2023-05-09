@@ -161,7 +161,14 @@ main {
     color: #999999;
 }
 
+section {
+    margin: 0;
+    padding: 100px 0 150px;
+    height: 681px;
+}
+
 footer button {
+    position: relative;
     float: right;
     width: 175px;
     height: 49px;
@@ -181,6 +188,7 @@ footer button {
 }
 
 footer button::before {
+    position: absolute;
     content: "";
     width: 18px;
     height: 21px;
@@ -188,7 +196,7 @@ footer button::before {
     background: url(../images/email.svg) center no-repeat;
 }
 
-footer h3 {
+footer h2 {
     padding: 0;
     margin: 0 0 20px;
     height: 57px;
