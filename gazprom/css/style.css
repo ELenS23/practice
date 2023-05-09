@@ -42,21 +42,32 @@ header {
 footer {
     height: 181px;
     background: #f7654a;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 main {
     height: 931px;
 }
 
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
 .top {
     height: 740px;
-    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url("../images/top-bg.png") #404149;
+    padding-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url("../images/top_bg.jpg") center no-repeat, #404149;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
     width: 1110px;
     margin: 0 auto;
 }
@@ -71,7 +82,6 @@ main {
 .navigation-burger {
     display: block;
     border: none;
-
     box-sizing: border-box;
 }
 
@@ -79,18 +89,14 @@ main {
     display: block;
 }
 
-.top-annotation {
-    margin: 112px auto 35px;
+.top-title {
+    margin: 112px auto 20px;
     width: 734px;
-    font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
     line-height: 95px;
-    text-align: center;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #fff;
 }
 
 .top-description {
@@ -99,9 +105,6 @@ main {
     font-style: regular;
     font-size: 18px;
     line-height: 27px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .menu {
@@ -122,6 +125,7 @@ main {
     width: 190px;
     height: 186px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .menu-item-number {
@@ -132,8 +136,6 @@ main {
     font-weight: 500;
     font-size: 72px;
     line-height: 107px;
-    text-align: center;
-    text-transform: uppercase;
     color: #F7654A;
 }
 
@@ -144,15 +146,52 @@ main {
     font-weight: 500;
     font-size: 36px;
     line-height: 53px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .menu-item-market {
+    margin: 5px 0;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
     color: #999999;
+}
+
+footer button {
+    float: right;
+    width: 175px;
+    height: 49px;
+    border: none;
+    padding: 14px 30px;
+    background: #fff;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: right;
+}
+
+footer button::before {
+    content: "";
+    width: 18px;
+    height: 21px;
+    display: block;
+    background: url(../images/email.svg) center no-repeat;
+}
+
+footer h3 {
+    padding: 0;
+    margin: 0 0 20px;
+    height: 57px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
