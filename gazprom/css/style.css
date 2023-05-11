@@ -87,6 +87,7 @@ main {
     display: block;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .navigation-burger-logo {
@@ -187,7 +188,7 @@ li:not(:last-child) {
     margin-right: 30px;
 }
 
-img {
+li img {
     width: 100%;
     object-fit: contain;
     margin-bottom: 60px;
