@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Проект jQuery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <form class="form__feedback feedback-form" action="https://echo.htmlacademy.ru/" method="post"> -->
+    <fieldset>
+        <legend>Регистрация</legend>
+        <label for="username">
+            <span>Имя пользователя<sup>*</sup>:</span>
+            <input type="text" id="username" name="username" placeholder="Введите логин" required>
+        </label>
+        <label for="phone">
+            <span>Контактный телефон<sup>*</sup>:</span>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+        </label>
+        <label for="email">
+            <span>Электронная почта<sup>*</sup>:</span>
+            <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+        </label>
+    </fieldset>
+    <div>
+        <button class="button__out" type="submit">Зарегистрироваться</button>
+        <button class="button__in" type="submit">Показать форму</button>
+        <span>* — обязательные поля</span>
+    </div>
+
+    <!--</form>-->
+
+</body>
+<script src="jquery-3.7.0.min.js"></script>
+<script src="script.js"></script>
+
+</html>

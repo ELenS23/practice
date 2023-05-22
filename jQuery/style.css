@@ -1,0 +1,60 @@
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+legend {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 30%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+button+span {
+    font-size: 14px;
+}
