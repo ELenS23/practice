@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Верстка адаптивного макета (страница 2)</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-contacts">
+        <nav>
+            <a class="logo" href="index.html" aria-label="Логотип.">
+                <svg width="52" height="45" viewBox="0 0 52 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_887)">
+                        <ellipse cx="17.2847" cy="22.4828" rx="17.2847" ry="14.8707" fill="#316099" />
+                        <path
+                            d="M50.8541 22.4828C50.8541 30.0075 43.7096 36.3535 34.5694 36.3535C25.4291 36.3535 18.2847 30.0075 18.2847 22.4828C18.2847 14.9581 25.4291 8.61206 34.5694 8.61206C43.7096 8.61206 50.8541 14.9581 50.8541 22.4828Z"
+                            fill="currentColor" stroke="#316099" stroke-width="2" />
+                    </g>
+                </svg>
+            </a>
+            <a class="navigation-icon" href="contacts.html" aria-label="Меню контактов.">
+                <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_885)">
+                        <g clip-path="url(#clip1_1_885)">
+                            <path
+                                d="M36.3363 8.875C36.9328 8.875 37.421 8.47422 37.421 7.98438V5.01562C37.421 4.52578 36.9328 4.125 36.3363 4.125H34.5284V0.5625C34.5284 -1.4043 32.5849 -3 30.1895 -3H1.26368C-1.13174 -3 -3.0752 -1.4043 -3.0752 0.5625V31.4375C-3.0752 33.4043 -1.13174 35 1.26368 35H30.1895C32.5849 35 34.5284 33.4043 34.5284 31.4375V27.875H36.3363C36.9328 27.875 37.421 27.4742 37.421 26.9844V24.0156C37.421 23.5258 36.9328 23.125 36.3363 23.125H34.5284V18.375H36.3363C36.9328 18.375 37.421 17.9742 37.421 17.4844V14.5156C37.421 14.0258 36.9328 13.625 36.3363 13.625H34.5284V8.875H36.3363ZM15.7266 6.5C18.9175 6.5 21.5118 8.63008 21.5118 11.25C21.5118 13.8699 18.9175 16 15.7266 16C12.5357 16 9.94143 13.8699 9.94143 11.25C9.94143 8.63008 12.5357 6.5 15.7266 6.5ZM25.8506 24.075C25.8506 24.8617 24.9467 25.5 23.8258 25.5H7.62736C6.50649 25.5 5.60256 24.8617 5.60256 24.075V22.65C5.60256 20.2898 8.32339 18.375 11.677 18.375H12.1289C13.2408 18.7535 14.4521 18.9688 15.7266 18.9688C17.0011 18.9688 18.2215 18.7535 19.3242 18.375H19.7762C23.1298 18.375 25.8506 20.2898 25.8506 22.65V24.075Z"
+                                fill="#316099" />
+                        </g>
+                    </g>
+                </svg>
+
+
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 class="banner__title">Contact Us</h1>
+            <p class="banner__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="contacts">
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <h2 class="contacts__subtitle">Address</h2>
+                    <p class="contacts__description">Id convallis placerat sit sed duis id amet volutpat quam a,
+                        pharetra.</p>
+                </li>
+                <li class="contacts__item">
+                    <h2 class="contacts__subtitle">Phone</h2>
+                    <a class="contacts__link" href="tel:+781273134321">+7-812-7313-4321</a>
+                    <a class="contacts__link" href="tel:+781700001234">+7-817-0000-1234</a>
+                </li>
+                <li class="contacts__item">
+                    <h2 class="contacts__subtitle">Online service</h2>
+                    <a class="contacts__link contacts__link--web" href="www.site.com"
+                        aria-label="Сайт компании.">www.site.com</a>
+                    <a class="contacts__link contacts__link--email" href="mailto:hello.site@gmail.com"
+                        aria-label="Написать электронное письмо в компанию.">hello.site@gmail.com</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts__form">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend class="form__legend contacts__subtitle">Send us message</legend>
+                    <label>
+                        <span>Full Name</span>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea placeholder="Your Message" rows="3" cols="10"></textarea>
+                    </label>
+                    <button class="button button__contacts">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a787c106165efdb009813b8f892ea67d6ea0f9a02f63272de97272e8fd89e3a&amp;source=constructor"
+                width="100%" height="100%" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer__first">
+            <h2 class="footer__subtitle">Intersted to woek with our team?</h2>
+            <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <button class="footer__button">Let’s Talk</button>
+        </section>
+
+        <div class="f_wrap">
+            <section>
+                <ul>
+                    <li value="1">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </li>
+
+                    <li value="20">
+                        <span>+7-812-7313-4321</span>
+                    </li>
+
+                    <li value="5">
+                        <span>hello.site@gmail.com</span>
+                    </li>
+                </ul>
+
+                <p class="copy">&copy; 2021 All rights reserved.</p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
