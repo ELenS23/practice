@@ -1,11 +1,11 @@
-<svg width="52" height="45" viewBox="0 0 52 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1_887)">
-<ellipse cx="17.2847" cy="22.4828" rx="17.2847" ry="14.8707" fill="#316099"/>
-<path d="M50.8541 22.4828C50.8541 30.0075 43.7096 36.3535 34.5694 36.3535C25.4291 36.3535 18.2847 30.0075 18.2847 22.4828C18.2847 14.9581 25.4291 8.61206 34.5694 8.61206C43.7096 8.61206 50.8541 14.9581 50.8541 22.4828Z" fill="white" stroke="#316099" stroke-width="2"/>
+<svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_27_111)">
+<ellipse cx="15.1867" cy="24" rx="15.1867" ry="16" fill="#316099"/>
+<path d="M44.56 24C44.56 32.3341 38.1599 39 30.3733 39C22.5868 39 16.1866 32.3341 16.1866 24C16.1866 15.6659 22.5868 9 30.3733 9C38.1599 9 44.56 15.6659 44.56 24Z" fill="white" stroke="#316099" stroke-width="2"/>
 </g>
 <defs>
-<clipPath id="clip0_1_887">
-<rect width="51.8542" height="44.6122" fill="white" transform="matrix(1 0 0 -1 0 44.7888)"/>
+<clipPath id="clip0_27_111">
+<rect width="45.56" height="48" fill="white" transform="matrix(1 0 0 -1 0 48)"/>
 </clipPath>
 </defs>
 </svg>
