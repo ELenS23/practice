@@ -228,6 +228,7 @@ h2 {
     padding: 44px 44px 44px 32px;
     box-sizing: border-box;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
 }
 
 .help__item:not(:last-child) {
@@ -275,10 +276,21 @@ li:nth-of-type(3) p {
 }
 
 .help__item a {
+    display: flex;
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
+    width: 140px;
     color: #5A98D0;
+    box-sizing: border-box;
+}
+
+.help__item a::after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: url("../images/arrow.svg") no-repeat;
+    margin-left: 23px;
 }
 
 .project__subtitle {
@@ -296,7 +308,7 @@ li:nth-of-type(3) p {
     position: relative;
     width: 100%;
     height: 480px;
-    background: #5A98D0 url("../images/smart.png") no-repeat;
+    background: #5A98D0 url("../images/smart-desktop.png") no-repeat;
     border-radius: 10px;
     margin-bottom: 33px;
 }
@@ -307,7 +319,6 @@ li:nth-of-type(3) p {
     top: 32px;
     font-size: 28px;
     font-weight: 400;
-
     line-height: 46px;
     color: #fff;
     letter-spacing: 0.06em;
@@ -315,7 +326,7 @@ li:nth-of-type(3) p {
 
 .smart__link {
     position: absolute;
-    right: 50px;
+    left: 692px;
     top: 64px;
     width: 398px;
     font-size: 32px;
@@ -326,7 +337,7 @@ li:nth-of-type(3) p {
     float: left;
     width: 554px;
     height: 417px;
-    background: #5A98D0 url("../images/sparklite.png") no-repeat;
+    background: #5A98D0 url("../images/sparklite-desktop.png") no-repeat;
     border-radius: 10px;
     margin-bottom: 112px;
 }
@@ -336,7 +347,7 @@ li:nth-of-type(3) p {
     float: right;
     width: 554px;
     height: 417px;
-    background: #5A98D0 url("../images/car.png") no-repeat;
+    background: #5A98D0 url("../images/car-desktop.png") no-repeat;
     border-radius: 10px;
     margin-bottom: 112px;
 }
@@ -559,7 +570,6 @@ textarea::placeholder {
 }
 
 
-
 /* adaptivity */
 @media screen and (max-width:1365px) {
 
@@ -676,6 +686,7 @@ textarea::placeholder {
     /* index */
     .header__main {
         padding: 50px 34px 50px 32px;
+        margin: 0 auto;
     }
 
     .navigation-icon--main {
@@ -683,14 +694,19 @@ textarea::placeholder {
         width: 46px;
     }
 
+    .m_wrap {
+        margin-bottom: 65px;
+    }
+
     .m_top {
         background: url('../images/big_image.png') 365px 230px / 336px 292px no-repeat;
-        margin: 0 32px;
+        margin: 0 auto;
     }
 
     .m_middle>h2 {
         width: 680px;
     }
+
 
     .help__list {
         flex-direction: column;
@@ -707,7 +723,6 @@ textarea::placeholder {
         margin: 0 auto 32px auto;
     }
 
-
     .help__item h3 {
         min-width: 275px;
         margin-bottom: 6px;
@@ -716,6 +731,10 @@ textarea::placeholder {
     .help__item p {
         max-width: 255px;
         margin: 0;
+    }
+
+    .help__item a::after {
+        margin-left: 30px;
     }
 
     li:nth-of-type(2) {
@@ -732,7 +751,7 @@ textarea::placeholder {
     }
 
     li:nth-of-type(3) {
-        padding: 41px 41px 36px 30px;
+        padding: 41px 41px 34px 30px;
     }
 
 
@@ -742,9 +761,50 @@ textarea::placeholder {
     }
 
     li:nth-of-type(3) img {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
 
+    .m_middle {
+        margin-bottom: 98px;
+    }
+
+    .project__subtitle {
+        margin-bottom: 32px;
+    }
+
+    .project__description {
+        width: 520px;
+    }
+
+    .m_bottom {
+        width: 705px;
+    }
+
+    .smart {
+        max-height: 297px;
+        background-size: 705px 297px;
+    }
+
+    .smart__link {
+        left: 257px;
+    }
+
+    .sparklite {
+        background-size: 336px 253px;
+        width: 336px;
+        height: 253px;
+    }
+
+    .app__link {
+        left: 18px;
+        top: 21px;
+    }
+
+    .car {
+        background-size: 336px 253px;
+        width: 336px;
+        height: 253px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -878,4 +938,148 @@ textarea::placeholder {
         padding: 3px 18px;
         right: 135px;
     }
+
+    .nav__main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header__main {
+        padding: 16px 16px 20px 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .m_top {
+        padding: 0 16px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
+        height: 285px;
+    }
+
+    .m_wrap {
+        height: 285px;
+        margin-bottom: 46px;
+    }
+
+    .m_top__title {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        width: 91%;
+        margin: 0 auto 12px;
+    }
+
+    .m_top>p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .m_top button {
+        font-size: 12px;
+        padding: 0 5px;
+        font-weight: 400;
+        min-width: 108px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .m_middle>h2 {
+        font-size: 24px;
+        line-height: 28px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        letter-spacing: 0.01em;
+    }
+
+    .help__item {
+        padding: 41px 41px 16px 30px;
+    }
+
+    .help__item p {
+        margin-bottom: 10px;
+    }
+
+    li:nth-of-type(2) {
+        padding-bottom: 16px;
+    }
+
+    li:nth-of-type(2) p {
+        margin-bottom: 35px;
+    }
+
+    li:nth-of-type(3) {
+        padding-bottom: 16px;
+    }
+
+    li:nth-of-type(3) p {
+        margin-bottom: 35px;
+    }
+
+    .m_middle {
+        margin-bottom: 38px;
+    }
+
+    .m_bottom {
+        width: 343px;
+        margin: 0 auto 68px;
+    }
+
+    .project__subtitle {
+        margin: 0 auto 32px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+    }
+
+    .project__description {
+        width: 100%;
+        margin-bottom: 82px;
+    }
+
+    .smart {
+        background-size: 343px 144px;
+        max-height: 144px;
+        margin-bottom: 16px;
+    }
+
+    .app__link {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        top: 25px;
+    }
+
+    .smart__link {
+        left: 156px;
+        top: 15px;
+    }
+
+    .sparklite {
+        width: 100%;
+        float: none;
+        margin-bottom: 16px;
+        background-size: 343px 255px;
+    }
+
+    .car {
+        width: 100%;
+        float: none;
+        height: 262px;
+        background-size: 343px 262px;
+        margin: 0;
+    }
+
+    .car__link {
+        top: 18px;
+    }
+
+    .footer__button {
+        top: 235px;
+    }
+
 }
