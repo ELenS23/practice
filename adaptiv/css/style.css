@@ -235,24 +235,24 @@ h2 {
     margin-right: 32px;
 }
 
-li img {
+.help__item img {
     display: block;
     margin: 0 auto;
 }
 
-li:first-of-type img {
+.help__item:first-of-type img {
     margin: 0 73px 47px 38px;
 }
 
-li:nth-of-type(2) img {
+.help__item:nth-of-type(2) img {
     margin-bottom: 40px;
 }
 
-li:nth-of-type(2) p {
+.help__item:nth-of-type(2) p {
     min-width: 294px;
 }
 
-li:nth-of-type(3) img {
+.help__item:nth-of-type(3) img {
     margin: 4px 74px 47px 50px;
 }
 
@@ -263,11 +263,11 @@ li:nth-of-type(3) img {
     letter-spacing: 0.05em;
 }
 
-li:nth-of-type(3) h3 {
+.help__item:nth-of-type(3) h3 {
     min-width: 295px;
 }
 
-li:nth-of-type(3) p {
+.help__item:nth-of-type(3) p {
     min-width: 295px;
 }
 
@@ -605,7 +605,6 @@ textarea::placeholder {
         height: 392px;
     }
 
-
     .header-contacts {
         box-sizing: border-box;
         padding: 8px 35px 32px 27px;
@@ -737,30 +736,30 @@ textarea::placeholder {
         margin-left: 30px;
     }
 
-    li:nth-of-type(2) {
+    .help__item:nth-of-type(2) {
         padding: 41px 41px 36px 30px;
     }
 
-    li:nth-of-type(2) img {
+    li.help__item:nth-of-type(2) img {
         margin-bottom: 40px;
     }
 
-    li:nth-of-type(2) p {
+    .help__item:nth-of-type(2) p {
         min-width: 284px;
         margin-bottom: 15px;
     }
 
-    li:nth-of-type(3) {
+    .help__item:nth-of-type(3) {
         padding: 41px 41px 34px 30px;
     }
 
 
-    li:nth-of-type(3) p {
+    .help__item:nth-of-type(3) p {
         min-width: 276px;
         margin-bottom: 15px;
     }
 
-    li:nth-of-type(3) img {
+    .help__item:nth-of-type(3) img {
         margin-bottom: 48px;
     }
 
@@ -1004,19 +1003,19 @@ textarea::placeholder {
         margin-bottom: 10px;
     }
 
-    li:nth-of-type(2) {
+    .help__item:nth-of-type(2) {
         padding-bottom: 16px;
     }
 
-    li:nth-of-type(2) p {
+    .help__item:nth-of-type(2) p {
         margin-bottom: 35px;
     }
 
-    li:nth-of-type(3) {
+    .help__item:nth-of-type(3) {
         padding-bottom: 16px;
     }
 
-    li:nth-of-type(3) p {
+    .help__item:nth-of-type(3) p {
         margin-bottom: 35px;
     }
 
