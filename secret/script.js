@@ -8,7 +8,7 @@ if (UserAnswer1 == answer1 || UserAnswer1 == answer2) {
     alert("Верно!");
     n++;
 }
-else if ((UserAnswer1)) {
+else {
     alert("Неверно!");
 }
 alert("Поотгадываем еще?")
@@ -20,7 +20,7 @@ if (UserAnswer2 == answer3 || UserAnswer2 == answer4) {
     alert("Верно!");
     n++;
 }
-else if ((UserAnswer2)) {
+else {
     alert("Неверно!");
 }
 alert("И последняя загадка..")
@@ -31,10 +31,10 @@ if (UserAnswer3 == answer5) {
     alert("Верно!");
     n++;
 }
-else if ((UserAnswer3)) {
+else {
     alert("Неверно!");
 }
-alert("Вы угадали:" + n + " " + "из 3 " + "загадок.");
+alert("Вы угадали:" + " " + n + " " + "из 3 " + "загадок.");
 
 
 
