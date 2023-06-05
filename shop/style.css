@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.ttf');
+    font-weight: 400;
+}
