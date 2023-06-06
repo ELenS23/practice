@@ -22,8 +22,79 @@
     font-weight: 800;
 }
 
-font-face {
+@font-face {
     font-family: 'Work Sans';
     src: url('../fonts/WorkSans-Regular.ttf');
     font-weight: 400;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+p,
+span,
+a,
+header,
+main,
+footer,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    max-width: 1200px;
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main-header__navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__list {
+    width: 400px;
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
 }
