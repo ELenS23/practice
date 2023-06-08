@@ -55,6 +55,7 @@ img {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 .visually-hidden {
@@ -70,14 +71,26 @@ a {
     overflow: hidden;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    max-width: 1200px;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 1200px;
     font-family: 'Work Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #151C22;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .container {
@@ -89,12 +102,95 @@ body {
 .main-header__navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 67px;
 }
 
 .navigation__list {
     width: 400px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     list-style: none;
     font-size: 16px;
     line-height: 19px;
+}
+
+.navigation__list--user {
+    justify-content: flex-end;
+}
+
+.navigation__item {
+    padding: 25px 5px;
+    margin-right: 25px;
+}
+
+.navigation__item--active {
+    font-weight: 700;
+    text-underline-offset: 15px;
+    text-decoration: underline;
+    color: #151C22;
+}
+
+.navigation__item:hover,
+.navigation__item:focus {
+    opacity: 0.5;
+}
+
+.navigation__link--logo {
+    margin: 0 auto;
+}
+
+.banner {
+    background: #f1f2f4;
+    min-height: 617px;
+}
+
+.banner__subtitle {
+    color: #727A82;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.banner__slogan {
+    font-family: 'Anton', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 193px;
+    color: #151C22;
+    text-transform: uppercase;
+}
+
+.button {
+    max-width: 220px;
+    padding: 27px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background-color: #151c22;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.banner__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 110px;
+    padding: 50px;
+}
+
+.banner__image {
+    padding: 50px;
+    margin-right: 120px;
+    box-sizing: border-box;
 }
