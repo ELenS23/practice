@@ -49,7 +49,6 @@ section {
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -153,6 +152,10 @@ main {
     flex-grow: 1;
 }
 
+.index__section {
+    padding: 50px 0;
+}
+
 .banner {
     background: #f1f2f4;
     min-height: 617px;
@@ -176,7 +179,7 @@ main {
 
 .button {
     max-width: 220px;
-    padding: 22px 24px;
+    padding: 20px 22px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -204,6 +207,105 @@ main {
     margin-right: 120px;
     background: url(../images/index/diagonal.png) top left no-repeat, url(../images/index/diagonal.png) bottom right no-repeat;
 }
+
+/* Bestseller */
+
+.subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section__link {
+    text-underline-offset: 10px;
+    text-decoration: underline;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.catalog__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.catalog__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    order: 1;
+    margin-bottom: 5px;
+}
+
+.catalog__link {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__image {
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    order: 2;
+}
+
+/* NEWS */
+
+.news__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 462px;
+}
+
+.news__background {
+    min-width: 470px;
+    background: url("../images/index/news_bg.png") right no-repeat;
+}
+
+.news__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 27px;
+}
+
+.news__column-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    padding: 52px 47px 28px 43px;
+    max-width: 400px;
+    background: #f1f2f4;
+    box-sizing: border-box;
+}
+
+.news__time {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.news__text {
+    font-weight: 400;
+    color: #727A82;
+    margin-bottom: 24px;
+}
+
+.news__image {}
 
 /* FOOTER */
 footer {
