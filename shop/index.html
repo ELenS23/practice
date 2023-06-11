@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 
 </head>
 
@@ -20,7 +21,7 @@
                 <li class="navigation__item navigation__item--active"><a class="navigation__link"
                         href="index.html">Главная</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Новинки</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="news.html">Новости</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="product.html">Товар</a></li>
             </ul>
             <a class="navigation__link navigation__link--logo" href="index.html"><img src="images/index/logo.svg"
@@ -59,7 +60,7 @@
         <section class="index__section bestsellers container">
             <div class="section__header">
                 <h2 class="subtitle">Бестселлеры</h2>
-                <a class="section__link" href="catalog.html">Посмотреть все</a>
+                <a id="show" class="section__link">Посмотреть все</a>
             </div>
             <ul class="catalog">
                 <li class="catalog__item">
@@ -96,10 +97,47 @@
                 </li>
             </ul>
         </section>
+        <section id="section_best" class="index__section bestsellers container">
+            <ul class="catalog">
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Темный комбинезон</h3>
+                        <img class="catalog__image" src="images/index/best_product_5.jpg" width="270" height="349"
+                            alt="Темный комбинезон.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Джинсовка оверсайз</h3>
+                        <img class="catalog__image" src="images/index/best_product_6.jpg" width="270" height="349"
+                            alt="Светлая джинса.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Рубашка</h3>
+                        <img class="catalog__image" src="images/index/best_product_7.jpg" width="270" height="349"
+                            alt="Рубашка оверсайз.">
+                        <b class="price">&#8381;5000</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка с потертостями</h3>
+                        <img class="catalog__image" src="images/index/best_product_8.jpg" width="270" height="349"
+                            alt="Модные куртки.">
+                        <b class="price">&#8381;3000</b>
+                    </a>
+                </li>
+            </ul>
+            <a id="hide" class="section__link">Скрыть</a>
+        </section>
         <section class="index__section container">
             <div class="section__header">
                 <h2 class="subtitle">Новости</h2>
-                <a class="section__link" href="#">Посмотреть все</a>
+                <a class="section__link" href="news.html">Посмотреть все</a>
             </div>
             <div class="news__wrapper">
                 <div class="news__background">
@@ -115,13 +153,43 @@
                 <img class="news__image" src="images/index/news_foto.jpg" width="700" height="370"
                     alt="Парень с девушкой на удице в одежде Nimes.">
             </div>
-
+            </ul>
         </section>
         <section class="index__section container">
             <div class="section__header">
                 <h2 class="subtitle">Товары по категориям</h2>
                 <a class="section__link" href="#">Посмотреть все</a>
             </div>
+            <ul class="catalog">
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Джинсы</h3>
+                        <img class="catalog__image" src="images/index/category_product_1.jpg" width="270" height="349"
+                            alt="Девушка в джинсах.">
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Рубашки</h3>
+                        <img class="catalog__image" src="images/index/category_product_2.jpg" width="270" height="349"
+                            alt="Парень в джинсовой рубашке.">
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртки</h3>
+                        <img class="catalog__image" src="images/index/category_product_3.jpg" width="270" height="349"
+                            alt="Пара в джинсовках.">
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Комбинезоны</h3>
+                        <img class="catalog__image" src="images/index/category_product_4.jpg" width="270" height="349"
+                            alt="Девушка в комбинезоне.">
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -176,10 +244,7 @@
                 </li>
             </ul>
         </nav>
-
-
     </footer>
-
 </body>
 
 </html>

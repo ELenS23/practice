@@ -19,7 +19,8 @@
             <ul class="navigation__list">
                 <li class="navigation__item "><a class="navigation__link" href="index.html">Главная</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="news.html">Новости</a></li>
+                <li class="navigation__item  navigation__item--active"><a class="navigation__link "
+                        href="news.html">Новости</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="product.html">Товар</a></li>
             </ul>
             <a class="navigation__link navigation__link--logo" href="index.html"><img src="images/index/logo.svg"
@@ -28,8 +29,8 @@
                 <li class="navigation__item navigation__item--user"><a class="navigation__link" href="#"> <img
                             src="images/index/search.svg" width="18" height="18" alt="Поиск."><span
                             class="visually-hidden">Поиск</span></a></li>
-                <li class="navigation__item navigation__item--user navigation__item--active"><a class="navigation__link"
-                        href="order.html"><svg width="22" height="20" viewBox="0 0 22 20" fill="currentColor"
+                <li class="navigation__item navigation__item--user"><a class="navigation__link" href="order.html"><svg
+                            width="22" height="20" viewBox="0 0 22 20" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1 1H4.63636L7.07273 12.4771C7.15586 12.8718 7.38355 13.2263 7.71595 13.4785C8.04835 13.7308 8.46427 13.8649 8.89091 13.8571H17.7273C18.1539 13.8649 18.5698 13.7308 18.9022 13.4785C19.2346 13.2263 19.4623 12.8718 19.5455 12.4771L21 5.28571H5.54545M9.18182 18.1429C9.18182 18.6162 8.7748 19 8.27273 19C7.77065 19 7.36364 18.6162 7.36364 18.1429C7.36364 17.6695 7.77065 17.2857 8.27273 17.2857C8.7748 17.2857 9.18182 17.6695 9.18182 18.1429ZM19.1818 18.1429C19.1818 18.6162 18.7748 19 18.2727 19C17.7707 19 17.3636 18.6162 17.3636 18.1429C17.3636 17.6695 17.7707 17.2857 18.2727 17.2857C18.7748 17.2857 19.1818 17.6695 19.1818 18.1429Z"
@@ -40,7 +41,47 @@
         </nav>
     </header>
     <main>
-        <h1 class="visually-hidden">Джинсовая одежда</h1>
+        <h1 class="visually-hidden">Новости нашего бренда</h1>
+        <section class="index__section container">
+            <div class="section__header">
+                <h2 class="subtitle">Новости</h2>
+
+            </div>
+            <details>
+                <summary>Посмотреть</summary>
+                <div class="news__wrapper news__wrapper--summary">
+
+                    <div class="news__background news__background--summary">
+                        <div class="news__column-text news__column-text--summary">
+                            <h3 class="news__subtitle">G-Star обновляет свою экологичную коллекцию</h3>
+                            <time class="news__time" datetime="2023-06-14 11:00">Июнь 13, 2023</time>
+                            <p class="news__text">G-Star Raw продвигает движение за экологичность с коллекцией
+                                изделий из
+                                эластичного денима на весну 2023 года, которая специально разработана для повторного
+                                использования...</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </details>
+            </div>
+            <div class="news__wrapper">
+                <div class="news__background">
+                    <div class="news__column-text">
+                        <h3 class="news__subtitle">G-Star обновляет свою экологичную коллекцию</h3>
+                        <time class="news__time" datetime="2023-06-14 11:00">Июнь 13, 2023</time>
+                        <p class="news__text">G-Star Raw продвигает движение за экологичность с коллекцией изделий из
+                            эластичного денима на весну 2023 года, которая специально разработана для повторного
+                            использования...</p>
+                        <a class="button" href="#">Узнать больше…</a>
+                    </div>
+                </div>
+                <img class="news__image" src="images/index/news_foto.jpg" width="700" height="370"
+                    alt="Парень с девушкой на удице в одежде Nimes.">
+            </div>
+            </ul>
+        </section>
 
     </main>
     <footer>
