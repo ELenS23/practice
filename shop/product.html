@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/product.js"></script>
 </head>
 
 <body>
@@ -35,8 +37,193 @@
         </nav>
     </header>
     <main>
-        <h1 class="visually-hidden">Карточка товара</h1>
+        <section class="container product__section">
+            <h1 class="visually-hidden">Карточка товара</h1>
+            <div class="product-column__image">
+                <img src="images/product/product__main.jpg" width="400" height="523"
+                    alt="Девушка в светлом комбинезоне">
+                <ul class="product-photos__list">
+                    <li class="product-photos__item">
+                        <img src="images/product/product__small-1.jpg" width="85" height="113"
+                            alt="Девушка в комбинезоне сидит.">
+                    </li>
+                    <li class="product-photos__item">
+                        <img src="images/product/product__small-2.jpg" width="85" height="113"
+                            alt="Девушка в комбинезоне сбоку.">
+                    </li>
+                    <li class="product-photos__item">
+                        <img src="images/product/product__small-3.jpg" width="85" height="113"
+                            alt="Девушка в комбинезоне вид сзади.">
+                    </li>
+                    <li class="product-photos__item">
+                        <img src="images/product/product__small-4.jpg" width="85" height="113"
+                            alt="Девушка в комбинезоне на ступеньках.">
+                    </li>
+                </ul>
+                <a class="next__button" type="button">
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="prev__button" type="button">
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+            <div class="product-column__description">
+                <h2 class="subtitle subtitle--product">Комбинезон</h2>
+                <p class="product__description">Комбинезон из выстиранной джинсовой ткани из органического хлопка.
+                    Воротник, ширинка на пуговицах и регулируемый пояс на талии. Нагрудные карманы с клапанами. Длинные,
+                    слегка расклешенные рукава и прямые штанины с передними и задними карманами.</p>
+                <form method="post" action="#">
+                    <fieldset class="product-field">
+                        <legend>Цвет</legend>
+                        <ul class="color__list">
+                            <li class="color__item"> <label>
+                                    <input class="visually-hidden" type="radio" name="product-color" checked>
+                                    <span class="color"></span>
+                                </label></li>
+                            <li class="color__item"> <label>
+                                    <input class="visually-hidden" type="radio" name="product-color">
+                                    <span class="color blue"></span>
+                                </label></li>
+                            <li class="color__item"><label>
+                                    <input class="visually-hidden" type="radio" name="product-color">
+                                    <span class="color gray"></span>
+                                </label></li>
+                        </ul>
 
+                    </fieldset>
+                    <fieldset class="product-field">
+                        <legend>Размер</legend>
+                        <label>
+                            <input type="radio" id="product__size-xs" name="product-size">
+                            <span>XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="product__size-s" name="product-size" checked>
+                            <span>S</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="product__size-m" name="product-size">
+                            <span>M</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="product__size-l" name="product-size">
+                            <span>L</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="product__size-xl" name="product-size">
+                            <span>XL</span>
+                        </label>
+                    </fieldset>
+                    <div class="price">&#8381;5000</div>
+                    <button class="button" type="submit">Добавить в корзину</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="index__section index__section--slider container">
+            <h2 class="subtitle">Новинки</h2>
+            <div class="prev n"><a href="#">&lt;</a></div>
+            <div class="slider">
+                <div class="img current">
+                    <img class="index-catalog__image" src="images/index/best_product_2.jpg" width="400" height="523"
+                        alt="Женский комбинезон.">
+                </div>
+                <div class="img">
+                    <img class="index-catalog__image" src="images/index/best_product_1.jpg" width="400" height="523"
+                        alt="Мужская джинсовка.">
+                </div>
+                <div class="img">
+
+                    <img class="index-catalog__image" src="images/index/best_product_3.jpg" width="400" height="523"
+                        alt="Женская джинсовка.">
+                </div>
+                <div class="img">
+                    <img class="index-catalog__image" src="images/index/best_product_4.jpg" width="400" height="523"
+                        alt="Светлый женский комбинезон.">
+                </div>
+                <div class="img"><img class="index-catalog__image" src="images/index/best_product_6.jpg" width="400"
+                        height="523" alt="Светлая джинса."></div>
+            </div>
+            <div class="next n"><a href="#">&gt;</a></div>
+        </section>
+
+        <section class="index__section bestsellers container">
+            <div class="section__header">
+                <h2 class="subtitle">Вы также смотрели</h2>
+                <a id="show" class="section__link">Посмотреть все</a>
+            </div>
+            <ul class="index-catalog">
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Джинсовка</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_1.jpg" width="270" height="349"
+                            alt="Мужская джинсовка.">
+                        <b class="price">&#8381;2500</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Комбинезон</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_2.jpg" width="270" height="349"
+                            alt="Женский комбинезон.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Джинсовка оверсайз</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_3.jpg" width="270" height="349"
+                            alt="Женская джинсовка.">
+                        <b class="price">&#8381;5000</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Комбинезон с рукавами</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_4.jpg" width="270" height="349"
+                            alt="Светлый женский комбинезон.">
+                        <b class="price">&#8381;3000</b>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="section_best" class="index__section container product-view">
+            <ul class="index-catalog">
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Темный комбинезон</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_5.jpg" width="270" height="349"
+                            alt="Темный комбинезон.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Джинсовка оверсайз</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_6.jpg" width="270" height="349"
+                            alt="Светлая джинса.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Рубашка</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_7.jpg" width="270" height="349"
+                            alt="Рубашка оверсайз.">
+                        <b class="price">&#8381;5000</b>
+                    </a>
+                </li>
+                <li class="index-catalog__item">
+                    <a class="index-catalog__link" href="product.html">
+                        <h3 class="index-catalog__subtitle">Куртка с потертостями</h3>
+                        <img class="index-catalog__image" src="images/index/best_product_8.jpg" width="270" height="349"
+                            alt="Модные куртки.">
+                        <b class="price">&#8381;3000</b>
+                    </a>
+                </li>
+            </ul>
+            <a id="hide" class="section__link">Скрыть</a>
+        </section>
     </main>
     <footer>
         <h2 class="visually-hidden">Дополнительная информация о нас</h2>

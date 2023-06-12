@@ -42,13 +42,13 @@ a,
 header,
 main,
 footer,
-section {
+section,
+fieldset {
     margin: 0;
     padding: 0;
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
@@ -436,6 +436,155 @@ summary {
 
 .news__background--summary {
     background-position: left;
+}
+
+/* PRODUCT */
+.product__section {
+    display: flex;
+    padding: 50px 0;
+}
+
+.product-view {
+    margin-bottom: 50px;
+}
+
+.product-column__image {
+    position: relative;
+    padding: 0 70px;
+    width: 540px;
+    box-sizing: border-box;
+}
+
+.product-column__image img {
+    margin-bottom: 20px;
+}
+
+.product-photos__list {
+    list-style: none;
+    display: flex;
+}
+
+.product-photos__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.next__button {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 13px;
+    height: 23px;
+    background: url("../images/product/tick-right.svg") no-repeat;
+}
+
+.prev__button {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 13px;
+    height: 23px;
+    background: url("../images/product/tick-left.svg") no-repeat;
+}
+
+.product-column__description {
+    margin-left: 60px;
+    padding: 30px 128px 30px 70px;
+    width: 669px;
+    background: #f1f2f4;
+    box-sizing: border-box;
+}
+
+.subtitle--product {
+    margin-bottom: 40px;
+}
+
+.product__description {
+    width: 370px;
+    margin-bottom: 40px;
+}
+
+.product-field {
+    margin-bottom: 30px;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+div.price {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.color {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b0c3c7;
+}
+
+.color__list {
+    display: flex;
+    list-style: none;
+}
+
+.color__item {
+    margin-right: 15px;
+}
+
+.blue {
+    background: #3b6392;
+}
+
+.gray {
+    background: #151C22;
+}
+
+.input:checked {
+    outline: #b0c3c7;
+}
+
+.color__item:hover {
+    opacity: 0.5;
+}
+
+/* SLIDER */
+.index__section--slider {
+    position: relative;
+    padding: 50px 0 0;
+}
+
+.slider {
+    width: 400px;
+    height: 523px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.img {
+    display: none;
+    position: absolute;
+}
+
+.img.current {
+    display: block;
+}
+
+div a:hover {
+    opacity: 0.5;
+}
+
+.prev {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+.next {
+    position: absolute;
+    top: 400px;
+    right: 300px;
 }
 
 /* FOOTER */
