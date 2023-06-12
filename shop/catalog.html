@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/catalog.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,11 @@
         <section class="catalog__banner">
             <div class="container banner__container">
                 <div class="catalog-banner__text">
-                    <h2 class="catalog-banner__subtitle">Категории&nbsp;/&nbsp;Женщины&nbsp;/&nbsp;Куртки</h2>
+                    <ul class="breadcrumbs">
+                        <li><a class="breadcrumbs__link" href="index.html">Категории&nbsp;/</a></li>
+                        <li><a class="breadcrumbs__link" href="index.html">&nbsp;Женщины&nbsp;/</a></li>
+                        <li><a class="breadcrumbs__link breadcrumbs__link--active" href="#">&nbsp;Куртки&nbsp;</a></li>
+                    </ul>
                     <p class="catalog__slogan">Джинсовая коллекция</p>
                     <p class="catalog__slogan">Лето 2023</p>
                 </div>
@@ -48,46 +52,124 @@
                         alt="Новая коллекция."></div>
             </div>
         </section>
-        <section class="container">
-            <div class="section__header">
-                <h2 class="subtitle">Бестселлеры</h2>
-                <a class="section__link" href="catalog.html">Посмотреть все</a>
+        <section class="catalog container">
+            <h2 class="visually-hidden">Куртки</h2>
+            <div class="filter">
+                <select class="catalog-filters">
+                    <option>По популярности</option>
+                    <option>По возрастанию цены</option>
+                    <option>По убыванию цены</option>
+                    <option>По новинкам</option>
+                    <option>По скидкам</option>
+                </select>
+                <button id="show" class="button button__in" href="news.html">Загрузить</button>
             </div>
-            <ul id="image" sclass="catalog">
+
+            <ul class="catalog__list">
                 <li class="catalog__item">
                     <a class="catalog__link" href="product.html">
-                        <h3 class="catalog__subtitle">Джинсовка</h3>
-                        <img class="catalog__image" src="images/index/best_product_1.jpg" width="270" height="349"
-                            alt="Мужская джинсовка.">
-                        <b class="price">&#8381;2500</b>
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_1.jpg" width="243" height="270"
+                            alt="Девушка на фоне реки.">
+                        <b class="price">&#8381;4000</b>
                     </a>
                 </li>
                 <li class="catalog__item">
                     <a class="catalog__link" href="product.html">
-                        <h3 class="catalog__subtitle">Комбинезон</h3>
-                        <img class="catalog__image" src="images/index/best_product_2.jpg" width="270" height="349"
-                            alt="Женский комбинезон.">
-                        <b class="price">&#8381;4500</b>
-                    </a>
-                </li>
-                <li class="catalog__item">
-                    <a class="catalog__link" href="product.html">
-                        <h3 class="catalog__subtitle">Джинсовка оверсайз</h3>
-                        <img class="catalog__image" src="images/index/best_product_3.jpg" width="270" height="349"
-                            alt="Женская джинсовка.">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_2.jpg" width="243" height="270"
+                            alt="Девушка в джинсовой рубашке.">
                         <b class="price">&#8381;5000</b>
                     </a>
                 </li>
                 <li class="catalog__item">
                     <a class="catalog__link" href="product.html">
-                        <h3 class="catalog__subtitle">Комбинезон с рукавами</h3>
-                        <img class="catalog__image" src="images/index/best_product_4.jpg" width="270" height="349"
-                            alt="Светлый женский комбинезон.">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_3.jpg" width="243" height="270"
+                            alt="Девушка в джинсовке.">
+                        <b class="price">&#8381;3500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_4.jpg" width="243" height="270"
+                            alt="Улыбающаяся девушка.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_5.jpg" width="243" height="270"
+                            alt="Улыбающаяся девушка.">
                         <b class="price">&#8381;3000</b>
                     </a>
                 </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_6.jpg" width="243" height="270"
+                            alt="Улыбающаяся девушка в джинсовой рубашке.">
+                        <b class="price">&#8381;5500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_7.jpg" width="243" height="270"
+                            alt="девушка в джинсовке.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_8.jpg" width="243" height="270"
+                            alt="Девушка в комбинезоне.">
+                        <b class="price">&#8381;3500</b>
+                    </a>
+                </li>
+            </ul>
 
 
+            <ul id="section_catalog" class="catalog__list">
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_3.jpg" width="243" height="270"
+                            alt="Девушка в джинсовке.">
+                        <b class="price">&#8381;3500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_4.jpg" width="243" height="270"
+                            alt="Улыбающаяся девушка.">
+                        <b class="price">&#8381;4500</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_5.jpg" width="243" height="270"
+                            alt="Улыбающаяся девушка.">
+                        <b class="price">&#8381;3000</b>
+                    </a>
+                </li>
+                <li class="catalog__item">
+                    <a class="catalog__link" href="product.html">
+                        <h3 class="catalog__subtitle">Куртка</h3>
+                        <img class="catalog__image" src="images/catalog/catalog_product_2.jpg" width="243" height="270"
+                            alt="Девушка в джинсовой рубашке.">
+                        <b class="price">&#8381;5000</b>
+                    </a>
+                </li>
+                <li class="catalog__item catalog__item--hide">
+                    <a id="hide-2" class="section__link">Скрыть</a>
+                </li>
+            </ul>
         </section>
     </main>
 
